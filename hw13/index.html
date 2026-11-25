@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap Homework</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar md:navbar-expand bg-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LS Customs</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+            <div class="drawer-header">
+                <h5 class="drawer-title" id="navbarDrawerLabel">Nav Bar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+                <ul class="nav navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                    Buy Stuff
+                    </button>
+                    <div class="menu">
+                    <a class="menu-item" href="#">Prices</a>
+                    <a class="menu-item" href="#">Examples</a>
+                    <hr class="menu-divider">
+                    <a class="menu-item" href="#">Merch</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Meetups</a>
+                </li>
+                </ul>
+                <form class="hstack gap-2" role="search">
+                <input class="form-control" type="search" placeholder="What brings you in today?" aria-label="Search"/>
+                <button class="btn-solid btn-icon theme-secondary" type="submit">
+                    <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+                </button>
+                </form>
+            </div>
+            </dialog>
+        </div>
+    </nav>
+    <!-- Content -->
+    <hr>
+    <div id="carouselExampleContent" class="carousel slide">
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+            <div class="d-flex flex-column justify-content-center bg-subtle-accent p-9 bg-1 rounded-5" style="min-height: 320px;">
+                <h3>We'll make it how you want it.</h3>
+                <p class="fg-emphasis-secondary mb-3">Paint, wraps, horns, wheels, power, exhaust, lights. You decide.</p>
+                <div><a class="btn-solid theme-accent" href="#">Get in contact</a></div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center text-start bg-subtle-accent p-9 bg-2 rounded-5" style="min-height: 320px;">
+                <h3>Fix it to factory.</h3>
+                <p class="fg-emphasis-secondary mb-3">Something keeping your car down? Bring it here and it's fixed in no time.</p>
+                <div><a class="btn-solid theme-accent" href="#">Check our rates</a></div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center text-start bg-subtle-accent p-9 bg-3 rounded-5" style="min-height: 320px;">
+                <h3>Upgrades upgrades upgrades.</h3>
+                <p class="fg-emphasis-secondary mb-3">Don't know what you want? Get our expert opinion and your ride will be the talk of the block.</p>
+                <div><a class="btn-solid theme-accent" href="#">Browse out examples</a></div>
+            </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2">
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleContent" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleContent" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <hr>
+    <h1>Get to Know the Shops</h1>
+    <p>Meet our crew</p>
+    <div>
+        <div style="display: inline-block;">
+            <span class="avatar">BB</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">IV</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">VI</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">LS</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">CT</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">PC</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">XB</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">CC</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">TS</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">GH</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <span class="avatar">TP</span>
+            <div class="btn-group">
+                <button type="button" class="btn-solid theme-secondary">About</button>
+                <button type="button" class="btn-solid theme-secondary menu-toggle-split" data-bs-toggle="menu" aria-expanded="false">
+                    <svg class="bi" width="16" height="16" aria-hidden="true"><use href="#chevron-expand" /></svg>
+                    <span class="visually-hidden">Toggle menu</span>
+                </button>
+                <div class="menu">
+                    <a class="menu-item" href="#">Contact</a>
+                    <a class="menu-item" href="#">Prior work</a>
+                    <a class="menu-item" href="#">Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>Where are we?</p>
+
+    <div id="carouselExample" class="carousel carousel-overlay slide w-fit">
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+            <img src="burtonlocation.jpeg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="lamesalocation.webp" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="airportlocation.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="blainecountylocation.webp" class="d-block w-50" alt="...">
+            </div>
+        </div>
+        <div class="carousel-overlay-controls">
+            <div>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </div>
+    <p>Burton, La Mesa, Los Santos International Airport, and Blaine county.</p>
+    <p>You'll find us.</p>
+    <hr>
+    <p>Or we'll find you. Don't miss a payment.</p>
+    <h1>Pay Up</h1>
+    <br>
+
+    <div class="accordion">
+        <details class="accordion-item" name="accordionExample" open>
+            <summary class="accordion-header">
+            Payment Plans
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+            We offer payment plans. You can put any amount down and we'll sort out the plan to give you the most interest without your knowing. Smarter than that? Check our other options.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+            Cash
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+            We'll take pocket change if you have enough. Good luck though.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+            Check
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+            The most common option with LS Customs. Checks are crisp and we deposit within a few hours. It better not bounce.
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+            Card
+            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+            Simple and elegant, cards are all the RageMP. Want to track your every cent and pay extra? Cards work great! We take any card at all of our shops. We take tap, credit, debit, Maze, Fleeca, Union, BuckMe, and most major banks.
+            </div>
+        </details>
+    </div>
+    
+
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+  </body>
+</html>
